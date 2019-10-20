@@ -1,0 +1,28 @@
+name: Drupal Storybook Theme
+type: theme
+description: 'Drupal 8 theme with Storybook integration for demoing purposes.'
+package: Core
+version: VERSION
+core: 8.x
+
+libraries:
+  - drupal_storybook_theme/base
+  - drupal_storybook_theme/messages
+  - core/normalize
+
+libraries-extend:
+  user/drupal.user:
+    - drupal_storybook_theme/user
+  core/drupal.dropbutton:
+    - drupal_storybook_theme/dropbutton
+  core/drupal.dialog:
+    - drupal_storybook_theme/dialog
+  file/drupal.file:
+    - drupal_storybook_theme/file
+  core/drupal.progress:
+    - drupal_storybook_theme/progress
+
+component-libraries:
+  storybook:
+    paths:
+      - components

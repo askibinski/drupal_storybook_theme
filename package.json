@@ -1,0 +1,33 @@
+{
+  "name": "drupal_storybook_theme",
+  "version": "0.1.0",
+  "description": "Drupal 8 theme with Storybook integration for demoing purposes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/askibinski/drupal_storybook_theme.git"
+  },
+  "keywords": [
+    "drupal",
+    "storybook"
+  ],
+  "author": "Albert Skibinski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/askibinski/drupal_storybook_theme/issues"
+  },
+  "homepage": "https://github.com/askibinski/drupal_storybook_theme#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@storybook/html": "^5.2.4",
+    "babel-loader": "^8.0.6",
+    "drupal-attribute": "^1.0.2",
+    "twig": "^1.13.3",
+    "twig-drupal-filters": "^2.0.0",
+    "twig-loader": "^0.5.1"
+  }
+}
