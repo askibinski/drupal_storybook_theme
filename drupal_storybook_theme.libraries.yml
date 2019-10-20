@@ -99,3 +99,9 @@ user:
   css:
     component:
       css/components/user.css: { weight: -10 }
+
+block:
+  version: VERSION
+  css:
+    component:
+      components/block/block.css: { weight: -10 }

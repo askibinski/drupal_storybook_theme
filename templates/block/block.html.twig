@@ -25,6 +25,7 @@
  * @see template_preprocess_block()
  */
 #}
+{{ attach_library('drupal_storybook_theme/block') }}
 {% include "@storybook/block/block.twig" with {
   "attributes": attributes,
   "title_attributes": title_attributes,
