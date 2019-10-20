@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "auto": "auto"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,12 @@
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@storybook/html": "^5.2.4",
+    "auto": "^7.11.0",
     "babel-loader": "^8.0.6",
     "drupal-attribute": "^1.0.2",
     "twig": "^1.13.3",
     "twig-drupal-filters": "^2.0.0",
     "twig-loader": "^0.5.1"
-  }
+  },
+  "dependencies": {}
 }
