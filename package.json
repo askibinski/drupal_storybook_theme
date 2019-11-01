@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook",
+    "storybook-js": "npx babel components -d dist/components --ignore 'components/**/*.stories.js' --presets=@babel/preset-env,babel-preset-minify --plugins=babel-plugin-drupal-behaviors",
+    "storybook-css": "webpack -d --config ./webpack/webpack.config.js --display-error-details",
     "auto": "auto"
   },
   "repository": {
@@ -23,14 +25,20 @@
   },
   "homepage": "https://github.com/askibinski/drupal_storybook_theme#readme",
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@storybook/html": "^5.2.4",
     "auto": "^7.11.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-drupal-behaviors": "^0.1.1",
     "drupal-attribute": "^1.0.2",
+    "mini-css-extract-plugin": "^0.8.0",
     "twig": "^1.13.3",
     "twig-drupal-filters": "^2.0.0",
-    "twig-loader": "^0.5.1"
+    "twig-loader": "^0.5.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-fix-style-only-entries": "^0.4.0"
   },
   "dependencies": {}
 }
